@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiqiang Li</title>
+    <!--
+        Inside the style, you put the CSS instructions. The hash symbol is to show that you want to locate that. For id, it is #, for classes it is .
+    -->
+    <style>
+        h1{color:darkblue; background-color:black; text-align:center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        h2{font-family: 'Courier New';}
+        #js{color:blueviolet; background-color:darkorange; width: 300px;}
+        p.intro{background-color: blanchedalmond;}
+        .msg{background-color: crimson;}
+
+        /*-- Table --*/
+        .table1{background-color: burlywood; border: dashed 3px mediumblue; width: 300px; margin: 50px auto;}
+        .table1 tr td{border-top: black dotted 2px; text-align: center;}
+
+        /*-- Margin --*/
+        .hungry_plead{background-color: darkslateblue; margin: 50px;}
+        .hungry_plead2{background-color: darkslateblue; margin-left: 100px;}
+        .hungry_plead3{background-color: darkslateblue; margin: 75px 125px;}
+        .hungry_plead4{background-color: darkslateblue; margin: 80px 120 px 0px 20px;}
+
+        /*-- Padding --*/
+        .padding1, .padding2, .padding3, .padding4{
+            background-color: darkslateblue;
+        }
+        .padding1{padding: 50px;}
+        .padding2{padding: 20px 80px;}
+        .padding3{padding: 60px 30px 100px 0px;}
+        .padding4{padding-bottom: 50px;}
+
+    </style>
+</head>
+<body>
+    <h1>Padding</h1>
+    <p>Padding is the distance within, inside, the box or element.</p>
+    <div class="padding1">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="padding2">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="padding3">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="padding4">I am really hungry. Maybe I should get food sometime soon.</div>
+
+    <h1>Margin</h1>
+    <p>Margin is the distance outside the box.</p>
+    <!-- 
+        Create a table of four rows and three columns in each row.
+    -->
+    <p class="intro">This is a paragraph</p>
+    <div class="hungry_plead">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="hungry_plead2">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="hungry_plead3">I am really hungry. Maybe I should get food sometime soon.</div>
+    <hr>
+    <div class="hungry_plead4">I am really hungry. Maybe I should get food sometime soon.</div>
+
+    <h1>Inline Elements</h1>
+    <span class="msg">This is an inline element.</span>
+
+    <h1>Tables</h1>
+
+    <table class="table1">
+        <tr>
+            <!--
+                The table header (th). colspan expands the header to three column spaces and 
+                align, aligns the row to the center in this case.
+            -->
+            <th colspan="3" align="center">Simple Table</th>
+        </tr>
+
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+
+        <tr>
+            <td>Cell 4</td>
+            <td rowspan="2">Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+
+        <tr>
+            <td>Cell 7</td>
+            <!--
+                Removed so it looks like we "merged" the cells together
+                <td>Cell 8</td>
+            -->
+            <td>Cell 9</td>
+        </tr>
+
+        <tr>
+            <td>Cell 10</td>
+            <td>Cell 11</td>
+            <td>Cell 12</td>
+        </tr>
+    </table>
+
+    <h1>Insert Media</h1>
+    <h2>Youtube Video</h2>
+    <!--
+        To embed a video link into the site, you find a video. Right click then click Copy Embed then ctrl+v into where you want it.
+    -->
+    <iframe width="709" height="399" src="https://www.youtube.com/embed/14ZmgfbGZvU" 
+    title="ENDER LILIES | Mili - Harmonious (Extended, Slowed, Reverb) + Rain ambient" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Google Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.3004103589706!2d-73.75997592397215!3d40.755416971387156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261fb05968f07%3A0x49ff66ba1d2376bd!2sQueensborough%20Community%20College!5e0!3m2!1sen!2sus!4v1717107929552!5m2!1sen!2sus" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>List</h1>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="js">Javascript</li>
+
+        <!--
+            The one below is a nested list.
+        -->
+
+        <ul>
+            <li>Query</li>
+            <li>ReactJS</li>
+        </ul>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <!--
+        The start in the ol, starts the list at the number that was given. Else, it will naturally start at 1.
+    -->
+    <ol start="5">
+        <li>Complete Examples</li>
+        <li>Submit Assignments</li>
+        <li>Get a Grade</li>
+    </ol>
+
+    <h2>Description or Definition List</h2>
+    <!--
+        Used to list descriptions for data.
+    -->
+    <d1>
+        <dt>What is HTML?</dt>
+        <dd>The HypeLink Markup Language used to create the website structure.</dd>
+    </d1>
+
+</body>
+</html>

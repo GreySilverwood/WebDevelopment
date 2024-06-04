@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylingsignup.css">
+</head>
+<body>
+    <a href="day4.html" class="linkhome">
+        <p class="backhome"><span>&#9970;</span> Home</p>
+    </a>
+
+    <form class="form">
+        <fieldset>
+        <!-- Form Components-->
+        <legend class="formlegend">Sign Up</legend>
+
+        <!-- Input Control -->
+        <div class="control">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Type Username...">
+
+            <label for="password">Create a Password</label>
+            <input type="passord" name="password" id="password" placeholder="Enter a Password...">
+        </div>
+
+        <div class="control">
+            <label for="color">Select a Color</label>
+            <input type="color" name="selectcolor" id="color">
+        </div>
+
+        <div class="control">
+            <label for="rating">How do you like my work? (1 for Unsatisfied and 10 for Excellent)</label>
+            <input type="range" name="ratingwork" id="rating" min="1" max="10">
+        </div>
+        
+        <div class="control">
+            <label for="appointment"> Appointment Date:</label>
+            <input type="date" name="" id="appointment">
+        </div>
+
+        <div class="control">
+            <p>Gender</p>
+            <label for="male">Male</label>
+            <input type="radio" name="selectgender" value="Male" id="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="selectgender" value="Female" id="female">
+
+            <label for="other">Other</label>
+            <input type="radio" name="selectgender" value="Other" id="other">
+        </div>
+
+        <hr>
+        <div class="control">
+            <p>How did you hear about us? (Select all that apply)</p>
+            <label for="socialmedia">Social Media</label>
+            <input type="checkbox" name="aboutus" id="socialmedia" value="socialmedia">
+
+            <label for="internet">Internet</label>
+            <input type="checkbox" name="aboutus" id="internet" value="internet">
+
+            <label for="newspapers">Newspapers</label>
+            <input type="checkbox" name="aboutus" id="newspapers" value="newspapers">
+
+        </div>
+
+        <hr>
+        <!-- Text Area Control -->
+        <div class="control">
+            <label for="comments">Feedback and Comments</label>
+            <textarea name="textcomment" id="comments" rows="12" cols="100" placeholder="No more than 200 characters" 
+            maxlength="2000"></textarea>
+        </div>
+        <hr>
+        <div class="control">
+            <button type="submit">Submit Form</button>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.towerphoto{
+    width: 100%;
+}
+
+.box{
+    border-radius: 12px;
+    background-color: lightgray;
+    padding: 10px;
+    border:1px solid crimson;
+}

@@ -1,0 +1,41 @@
+/* ===== HOME BUTTON ===== */
+.linkhome{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.backhome:hover{
+opacity: 0.6;
+}
+
+.homebuttonbackground{
+    background-color: gray;
+    border: 1px solid red;
+}
+
+.buckinghamphoto{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.box{
+    border-radius: 12px;
+    background-color: lightgray;
+    padding: 10px;
+    border:1px solid crimson;
+}
+
+.titlearrangement{
+    padding: 10px;
+}
+
+.tagonimage{
+    width: 20%;
+    margin-left: 38%;
+    margin-top: 5%;
+}
+
+.modification{
+    width: 70%;
+    margin-left: 17%;
+}

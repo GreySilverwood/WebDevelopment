@@ -1,0 +1,362 @@
+html{scroll-behavior: smooth;}
+.header{
+    display: flex;
+    background: lightgray;
+}
+
+.headertotality{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.headerlink{
+    width: 5%;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms;
+    position: absolute;
+    padding-left: 15px;
+    top: 5%;
+    left: 5%;
+}
+
+.headerlink:hover{
+    opacity: 0.6;
+    transform: translateX(-20px) scale(1.2);
+}
+
+.headertitle{
+    width: 79%;
+    color: rgb(77, 0, 0);
+    text-align: center;
+    position: absolute;
+    top: 5%;
+}
+
+/* ===== BACKGROUND HEADER ===== */
+
+.headerbackground{
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+/*=========== SITELINKS ===========*/
+.sitelinks{
+    display: flex;
+    justify-content: center;
+}
+
+.biglink{
+    background-color: rgb(231, 24, 24);
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 78%;
+    left: 4%;
+}
+
+.navlink{
+    margin-top: 5%;
+}
+
+.navlink:hover{
+    background-color: whitesmoke;
+    border: dashed 2px gray;
+    border-radius: 12px;
+    color: rgb(231, 24, 24);
+}
+
+.towerlink{
+    background-color: rgb(231, 24, 24);
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 78%;
+    left: 37%;
+}
+
+.palacelink{
+    background-color: rgb(231, 24, 24);
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+    position: absolute;
+    top: 78%;
+    left: 70%;
+}
+
+/* ===== MAIN ===== */
+
+.mainbody{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.image{
+    width: 60%;
+    overflow: hidden;
+}
+
+.imagecontainer{
+    width: 20%;
+    padding: 15px;
+}
+
+.containers{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(231, 24, 24);
+    border-radius: 10px;
+    color: white;
+    border-color: 2px solid black;
+    margin: 10px;
+}
+
+.bigbenn{
+    width: 100%;
+}
+
+.buckinghamp{
+    width: 100%;
+}
+
+.toweroflondonn{
+    width: 100%;
+}
+
+.main_div{
+    width: 70%;
+    padding: 15px;
+    font-size: 21px;
+}
+
+.general{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.generalinfo{
+    padding-left: 10px;
+    width: 90%;
+}
+
+/* ===== PORTALS ===== */
+.bigbenportal{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(231, 24, 24);
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.towerportal{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(231, 24, 24);
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.buckinghamportal{
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgb(231, 24, 24);
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 20%;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+/* ===== CARD ===== */
+.sectioncard{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
+    transition: ease-in-out 250ms;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.cardLink{
+    color:crimson;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 12px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    transition: ease-in-out 200ms;
+    display: none;
+}
+
+.cardInfo{
+    padding: 12px;
+}
+
+.cardLink:hover{
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+.card:hover .cardLink{
+    display: inline;
+}
+
+.portraitcard{
+    position: relative;
+}
+
+.portraitInfo{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+}
+
+/* ===== SPECIFIC CARD ALTERATIONS ===== */ 
+.buckingimage{
+    width: 56%;
+}
+
+.bigbenimage{
+    width: 65%;
+}
+
+.toweroflondonimage{
+    width: 71%;
+}
+
+.fontcoloring{
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    color: rgb(156, 3, 3);
+}
+
+.buttonpositioning{
+    margin-top: 12px;
+    position: absolute;
+    top: 150%;
+    left: 68%;
+}
+
+.towerpositioning{
+    position: absolute;
+    top: 5%;
+    left: 72%;
+}
+
+.towerbutton{
+    position: absolute;
+    top: 150%;
+    left: 76%;
+}
+
+.benpositioning{
+    position: absolute;
+    top: 5%;
+    left: 81%;
+}
+
+.benbutton{
+    position: absolute;
+    top: 100%;
+    left: 75%;
+}
+
+/* ===== TEXT ARRANGEMENT ===== */
+.textarrangement{
+    margin-left: 26%;
+    width: 50%;
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.contact{
+    background-color: rgb(1, 1, 66);
+    color: whitesmoke;
+    display: flex;
+    padding: 30px;
+}
+
+.contactcolumn{
+    width: 33.3%
+}
+
+.sourceslink{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+
+.followicon{
+    width:50px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 0.5;
+}
+
+.followicon:hover{
+    opacity: 1;
+}
+
+.mapsize{
+    width: 300px;
+}

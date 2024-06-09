@@ -163,6 +163,26 @@ html{scroll-behavior: smooth;}
     width: 90%;
 }
 
+/*-- Table --*/
+.table1{
+    background-color: gray; 
+    border: solid 3px black; 
+    width: 300px; 
+    margin: 50px auto;
+}
+.table1 tr td{
+    border: black solid 2px; 
+    text-align: center;
+}
+
+.custom{
+    width: 100%;
+}
+
+.padding{
+    margin: 8px;
+}
+
 /* ===== PORTALS ===== */
 .bigbenportal{
     font-size: 15px;

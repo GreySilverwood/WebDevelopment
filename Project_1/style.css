@@ -116,6 +116,7 @@ html{scroll-behavior: smooth;}
 .image{
     width: 60%;
     overflow: hidden;
+    border: 3px white solid;
 }
 
 .imagecontainer{

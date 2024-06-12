@@ -381,3 +381,7 @@ html{scroll-behavior: smooth;}
 .mapsize{
     width: 300px;
 }
+
+.drawingtheline{
+    border: 3px rgb(100, 15, 15) solid;
+}

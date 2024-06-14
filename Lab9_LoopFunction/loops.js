@@ -122,7 +122,7 @@ do{
     }
 
     usercontrol = prompt("Would you like to continue operations? If you would like to quit, please input the number 4.")
-} while(usercontrol >= 0 && usercontrol < 4)
+} while(usercontrol >= 0 && usercontrol < 4 && userattempt > 3)
 
 console.log(`Your final balance is ${userbalance}. Have a good day.`)
 //ask the user if they want another transaction

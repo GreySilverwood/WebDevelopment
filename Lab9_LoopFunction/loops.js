@@ -94,9 +94,10 @@ let userwithdraw = 0
 while(pinnumber !== userpin){
     numberattempt++
     if(numberattempt > 3){
+        console.log("You have been locked out of your account.")
         break
     }
-    userpin = parseInt(prompt(`Attempt ${pinattempt}. Try again: `))
+    userpin = parseInt(prompt(`You have ${3 - pinattempt} attemps left. Try again: `))
 }
 
 console.log("Welcome User.")

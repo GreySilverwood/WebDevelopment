@@ -51,3 +51,77 @@ buttonolive.addEventListener("click", function(){
 buttonreset.addEventListener("click", function(){
     colorcontainer.style.backgroundColor = "white"
 })
+
+/**
+ * Tuesday, June 18th
+ */
+/* Event Object */
+//Collect the button
+let buttonpressme = document.querySelector(".buttonpressme")
+buttonpressme.addEventListener("click", function(e){
+    //switch text content 'buttonpressme' button
+    if (e.target.textContent === "Press Me!"){
+        e.target.textContent = "Button was pressed."
+    }
+    else {
+        e.target.textContent = "Press Me!"
+    }
+
+    //toggle between class 'buttonpressme' and 'buttonactive'
+    e.target.classList.toggle("buttonactive")
+})
+
+/* Remove an Item from a List */
+let listfruits = document.querySelector("#listfruits")
+listfruits.addEventListener("click", function(event){
+    if(event.target.tagName.toLowerCase() === "li"){
+        event.target.remove()
+    }
+})
+
+/* Prevent Default of an Event */
+let visitqcc = document.querySelector(".visitqcc")
+visitqcc.addEventListener("click", function(event){
+    event.preventDefault()
+    alert("QCC Website is offline. Try again later.")
+})
+
+/* Scroll Events */
+let content = document.querySelector("#content")
+let buttonscrollright = document.querySelector(".buttonscrollright")
+buttonscrollright.addEventListener("click", function(){
+    window.scrollBy(100,0)
+})
+
+/* Slice Photo Gallery */
+let buttonleft = document.querySelector(".buttonleft")
+let buttonright = document.querySelector(".buttonright")
+let gallerycontainer = document.querySelector(".gallerycontainer")
+
+buttonleft.addEventListener("click", function(){
+    gallerycontainer.scrollBy({
+        left: -500,
+        behavior: "smooth"
+    })
+})
+
+buttonright.addEventListener("click", function(){
+    gallerycontainer.scrollBy({
+        left: 500,
+        behavior: "smooth"
+    })
+})
+
+/* To Top */
+const gotop = document.querySelector(".gotop")
+
+window.addEventListener("scroll", function(){
+    let pixelstop = window.scrollY;
+    console.log(pixelstop)
+    if(pixelstop >= 300){
+        gotop.style.display = "block"
+    } 
+    else{
+        gotop.style.display = "none"
+    }
+})

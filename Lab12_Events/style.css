@@ -70,7 +70,7 @@ Event Object in Key Event
 }
 
 .gallerycontainer{
-    position: absolute;
+    position: relative;
     z-index: 1;
     overflow-x: scroll;
     white-space: nowrap;
@@ -127,4 +127,48 @@ html{scroll-behavior: smooth;}
 .gotop:hover{
     background-color: rgba(76, 0, 255, 0.8);
     box-shadow: 0px 0px 5px 2px;
+}
+
+/* Thursday, June 20th*/
+.greeting{
+    display: none;
+}
+
+#myform{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px lightslategray;
+    border-radius: 10px;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.controlblock{
+    margin-bottom: 20px;
+}
+
+.passwordmessage{
+    color: gray;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+.passworderror{
+    color: red;
+}
+
+.submitbutton{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: ease-in-out 200ms;
+    color: aliceblue;
+}
+
+.submitbutton:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px 2px 3px gray;
 }

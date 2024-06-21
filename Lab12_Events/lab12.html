@@ -72,6 +72,44 @@
         <a href="#"><span>&#9730;</span></a>
     </div>
 
+    <!-- Thursday, June 20th -->
+     <h2>Form Events</h2>
+    <form id="myform">
+        <!-- Username -->
+
+        <div class="controlblock">
+            <label for="username">Enter a username: </label>
+            <input type="text" id="username" placeholder="Type Username..." required>
+        </div>
+        
+
+        <!-- Password -->
+        <div class="controlblock">
+            <label for="passwordfield">Password:</label>
+            <input type="password" id="passwordfield" placeholder="Enter a password..." required>
+            <p class="passwordmessage">Must be 8+ characters.</p>
+            <div class="passworderror"></div>
+        </div>
+        
+        <!-- Comments Feedback: 50+ characters and less than 200 characters-->
+        <div class="controlblock">
+            <label for="comments">Feedback and Comments</label>
+            <input type="comments" id="commentfield" rows="12" cols="78" placeholder="Input your comments here..." 
+            maxlength="2000"></input>
+            <div class="commenterror"></div>
+        </div>
+
+        <button type="submit" class="submitbutton">Submit</button>
+
+    </form>
+
+    <!-- Display Message -->
+    <div class="greeting">
+        <p>Welcome to fore events <span></span>.</p>
+    </div>
+    
+
+
     <script src="script.js"></script>
 
 </body>

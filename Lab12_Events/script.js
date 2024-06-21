@@ -125,3 +125,98 @@ window.addEventListener("scroll", function(){
         gotop.style.display = "none"
     }
 })
+
+/**
+ * Thursday. June 20th
+ */
+/* FORE EVENTS */
+/* Input Event */
+// Get reference for the fore elements
+const myform = document.querySelector("#myform")
+
+//get the <div class="greeting">
+const greeting = document.querySelector(".greeting")
+const greetingname = document.querySelector(".greeting p span")
+
+myform.addEventListener("submit", function(event){
+    //prevent the default fore submission behavior
+    event.preventDefault()
+
+    //start form validation, username
+    const usernameinput = document.querySelector("#username")
+
+    //collect the input text value
+    const username = usernameinput.value
+
+    //validation 1: make sure the user types a username before pressing the submit button
+    if (username.trim() === ""){
+        alert("Please enter a username.")
+        return; //Stop further execution of the function
+    }
+
+    //if the validation passed, you can submit the data to the server
+    //greeting message after the validation
+    greetingname.innerHTML = username
+    greeting.style.display = "block"
+
+
+    //after the form is submitted, we can clear the username
+    usernameinput.value = ""
+})
+
+/**
+ * Password Validation
+ */
+
+//collect form elements
+const passwordfield = document.querySelector("#passwordfield")
+const submitbutton = document.querySelector(".submitbutton")
+
+//collect the password error message element
+const passworderror = document.querySelector(".passworderror")
+
+//disabled button when loading the window 
+window.addEventListener("load", function(){
+    submitbutton.disabled = true
+    submitbutton.style.backgroundColor = "lightgray"
+})
+
+//check the length of the password
+passwordfield.addEventListener("input", function(){
+    let numbercharacter = passwordfield.value.length
+    if (numbercharacter<8){
+        passworderror.textContent = "Password must have 8+ characters."
+        passworderror.style.color = "red";
+        passwordfield.style.border = "solid 2px red"
+    }
+    else{
+        passworderror.innerHTML = "&#x2713;"
+        passworderror.style.color = "green";
+        passwordfield.style.border = "solid 2px green"
+        submitbutton.disabled = false
+        submitbutton.style.backgroundColor = "red"
+    }
+})
+
+//atleast 50 characters and no more than 200 characters
+const commentfield = document.querySelector("#commentfield")
+const commenterror = document.querySelector(".commenterror")
+
+commentfield.addEventListener("input", function(){
+    let commentcharacters = commentfield.value.length
+    if (commentcharacters < 50 || commentcharacters > 200){
+        commenterror.textContent = "Comments must have more than 50 characters and less than 200 characters."
+        commenterror.style.color = "red";
+        commentfield.style.border = "solid 2px red"
+    }
+    /**else if (commentcharacters > 200){
+        commenterror.textcontent = "Comments must have less than 200 characters."
+        commenterror.style.color = "red";
+        commentfield.style.border = "solid 2px red"
+    } */
+    else{
+        commenterror.innerHTML = "&#x2713;"
+        commenterror.style.color = "green";
+        commentfield.style.border = "solid 2px green"
+    }
+})

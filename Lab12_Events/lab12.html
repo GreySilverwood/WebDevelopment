@@ -93,10 +93,14 @@
         
         <!-- Comments Feedback: 50+ characters and less than 200 characters-->
         <div class="controlblock">
-            <label for="comments">Feedback and Comments</label>
-            <input type="comments" id="commentfield" rows="12" cols="78" placeholder="Input your comments here..." 
-            maxlength="2000"></input>
+            <label for="commentfield">Feedback and Comments</label>
+            <textarea name="textcomments" id="commentfield" rows="12" cols="78" placeholder="Input your comments here..." 
+            maxlength="2000"></textarea>
             <div class="commenterror"></div>
+
+            <!--<label for="comments">Feedback and Comments</label>
+            <textarea name="textcomment" id="comments" rows="12" cols="78" placeholder="Input your comments here..." 
+            maxlength="2000"></textarea>-->
         </div>
 
         <button type="submit" class="submitbutton">Submit</button>

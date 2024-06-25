@@ -55,22 +55,30 @@ img{width: 100%;}
 .bagcontainer{
     width: 90%;
     margin: auto;
-    border: solid 1px black;
     display: flex;
 }
 
 .itemimg{
     width: 30%;
+    text-align: center;
 }
 
-.itemdescription{
+.itemdescriptionc{
     width: 30%;
+    text-align: center;
 }
 
 .itemprice{
     width: 15%;
+    text-align: center;
 }
 
 .itemquantity{
     width: 10%;
+    text-align: center;
 }
+
+.itemimg h2, .itemdescriptionc h2, .itemprice h2, .itemquantity h2, .totalprice_item h2{
+    background-color: lightblue;
+}
+    

@@ -1,0 +1,187 @@
+.headerbackground{
+    margin-top: 16%;
+    width: 100%;
+    height: 30%;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background: rgb(20, 4, 82);
+    height: 10%;
+}
+
+.headertitle{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    top: 9%;
+    font-size: 30px;
+}
+
+.headerlink{
+    margin-top: 10px;
+    width: 8%;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 250ms;
+    position: absolute;
+    padding-left: 15px;
+    top: 5%;
+    left: 5%;
+}
+
+.headerlink:hover{
+    opacity: 0.6;
+    transform: translateX(-10px) scale(1.2);
+}
+
+.headerimage{
+    width: 100%;
+}
+
+.container{
+    padding: 10px;
+    border: 3px solid black;
+    background-color: gray;   
+    text-align: center;
+}
+
+.portallink{
+    text-decoration: none;
+}
+
+.portallink:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* ===== FLIPCARD ===== */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    position: flex;
+    background-color: transparent;
+    width: 48%;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #000000;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: rgb(14, 2, 87);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cardcontainer{
+    display: flex;
+    width: 100%;
+}
+
+
+/* ===== FOOTER ===== */
+.contact{
+    background-color: rgb(1, 1, 66);
+    color: whitesmoke;
+    display: flex;
+    padding: 30px;
+}
+
+.contactcolumn{
+    width: 33.3%
+}
+
+.policieslink{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+
+.followicon{
+    width:50px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 0.5;
+}
+
+.followicon:hover{
+    opacity: 1;
+}
+
+/* SHOPPING CART */
+.bagcontainer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.itemimg{
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.itemdescriptionc{
+    width: 30%;
+    text-align: center;
+}
+
+.itemprice{
+    width: 15%;
+    text-align: center;
+}
+
+.itemquantity{
+    width: 10%;
+    text-align: center;
+}
+
+.itemimg h2, .itemdescriptionc h2, .itemprice h2, .itemquantity h2, .totalprice_item h2{
+    background-color: lightblue;
+    padding: 5px;
+}
+    
+.itemimg, .itemdescriptionc, .itemprice, .itemquantity, .totalprice_item{
+    border: 2px black solid;
+}
+
+/* BODY CUSTOMIZATION */
